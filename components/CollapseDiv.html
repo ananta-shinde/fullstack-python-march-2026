@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Collapse Container</title>
+    <style>
+        .title{
+                color:white;
+                background-color: black;
+                padding: 10px;
+                margin-top: 20px;
+
+        }
+
+        .description{
+                color:slategray;
+                background-color: beige;
+                display: none;
+                /* visibility: hidden; */
+        }
+
+        .container{
+            width: 50%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="collapse-div ">
+            <div class="title">this is title</div>
+            <div class="description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, harum quos itaque rerum recusandae voluptate ea nesciunt porro ipsa officia aliquid amet exercitationem minima magnam fugit! Commodi quis nobis doloribus!</div>
+        </div>
+        <div class="collapse-div ">
+            <div class="title">this is title</div>
+            <div class="description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, harum quos itaque rerum recusandae voluptate ea nesciunt porro ipsa officia aliquid amet exercitationem minima magnam fugit! Commodi quis nobis doloribus!</div>
+        </div>
+        <div class="collapse-div ">
+            <div class="title">this is title</div>
+            <div class="description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, harum quos itaque rerum recusandae voluptate ea nesciunt porro ipsa officia aliquid amet exercitationem minima magnam fugit! Commodi quis nobis doloribus!</div>
+        </div>
+        <div class="collapse-div ">
+            <div class="title">this is title</div>
+            <div class="description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, harum quos itaque rerum recusandae voluptate ea nesciunt porro ipsa officia aliquid amet exercitationem minima magnam fugit! Commodi quis nobis doloribus!</div>
+        </div>
+        <div class="collapse-div ">
+            <div class="title">this is title</div>
+            <div class="description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, harum quos itaque rerum recusandae voluptate ea nesciunt porro ipsa officia aliquid amet exercitationem minima magnam fugit! Commodi quis nobis doloribus!</div>
+        </div>
+        <div class="collapse-div ">
+            <div class="title">this is title</div>
+            <div class="description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, harum quos itaque rerum recusandae voluptate ea nesciunt porro ipsa officia aliquid amet exercitationem minima magnam fugit! Commodi quis nobis doloribus!</div>
+        </div>
+    </div>
+</body>
+<script>
+    // this line collects all elements which has class set to "description"
+    var descritions = document.getElementsByClassName("description")
+    var titles = document.getElementsByClassName("title")
+
+    // this reiterate through descritions collection and changes their diplay property to block
+    // for(i=0;i<descritions.length;i++){
+    //     descritions[i].style.display = "Block"
+    // }
+
+    titles[0].addEventListener("click",function (){
+        descritions[0].style.display = "block"
+    })
+    titles[1].addEventListener("click",function (){
+        descritions[0].style.display = "block"
+    })
+    titles[2].addEventListener("click",function (){
+        descritions[0].style.display = "block"
+    })
+    titles[3].addEventListener("click",function (index){
+        descritions[0].style.display = "block"
+    })
+
+
+    
+    
+
+   
+
+</script>
+</html>

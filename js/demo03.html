@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+   // create an array
+   nums = [20,55,22,45]
+   
+
+   // traversal
+//    for(i=0;i<nums.length;i++){
+//        if(nums[i]%2 == 0)
+//         console.log(nums[i])
+//    }
+
+   // traversal
+   nums.forEach(abc => {
+          console.log(abc)
+   });
+
+   // update/replace
+    nums[0] = 60
+
+   // insert
+   nums.push(55)
+   nums.push(2,66,67)
+
+   // delete
+   nums.pop()
+
+   // size
+   nums.length
+
+   //get index of value
+   console.log(nums.indexOf(55))
+   console.log(nums.lastIndexOf(55))
+//    console.log(nums.slice(3,6))
+//    console.log(nums.splice(3,6))
+
+   console.log(nums.filter(value=>(value>50)))
+
+   console.log(nums)
+
+</script>
+</html>

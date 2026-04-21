@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="createTask()">add task</button>
+    <button onclick="printTaskList()">print task list</button>
+</body>
+<script>
+    taskList = []
+    if(localStorage.getItem("tasks") != null){
+        taskList = JSON.parse(localStorage.getItem("tasks"))
+    }
+    
+    function createTask(){
+        task = {}
+        task.id = prompt("enter task id")
+        task.title = prompt("enter title")
+        task.status = prompt("enter status")
+        taskList.push(task)
+        localStorage.setItem("tasks",JSON.stringify(taskList))
+    }
+    
+    function printTaskList(){
+        console.log(taskList)
+    }
+
+</script>
+</html>

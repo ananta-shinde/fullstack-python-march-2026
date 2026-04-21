@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <style>
+        .form-container{
+            background-color: lightgray;
+            padding: 20px;
+        }
+        .form-control{
+            display: block;
+            width: 100%;
+            border: 0;
+            padding: 1rem 0;
+        }
+        .btn{
+            margin:1rem 0 ;
+            background-color: black;
+            color: white;
+            border: 0;
+            padding: 10px 25px;
+        }
+        .list-container{
+
+        }
+
+        .list-container ul{
+            list-style-type: none;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="form-container">
+        <h4>Create new task</h4>
+        <input id="taskinput" class="form-control" type="text" placeholder="task description"/>
+        <button class="btn" onclick="saveClick()">Save</button>
+    </div>
+
+    <div class="list-container">
+        <h4>My task list</h4>
+        <ul id="tasklist">
+           
+        </ul>
+    </div>
+</body>
+<script>
+    var taskList = []
+    if(localStorage.getItem("tasklist") != null){
+        taskList = JSON.parse(localStorage.getItem("tasklist"))
+    }
+
+    var tasklistview = document.getElementById("tasklist")
+    var taskInput = document.getElementById("taskinput");
+    // tasklistview.innerHTML =  tasklistview.innerHTML +"<li>"+task[0]+"</li>"
+    // tasklistview.innerHTML =  tasklistview.innerHTML +"<li>"+task[1]+"</li>"
+    // tasklistview.innerHTML =  tasklistview.innerHTML +"<li>"+task[2]+"</li>"
+
+    taskList.forEach(task => {
+        tasklistview.innerHTML =  tasklistview.innerHTML +"<li>"+task+"</li>"
+    });
+
+    function saveClick(){
+        taskList.push(taskInput.value)
+        // pepsist data
+        localStorage.setItem("tasklist",JSON.stringify(taskList))
+        window.location.reload()
+    }
+    
+   
+</script>
+</html>

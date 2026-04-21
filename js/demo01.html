@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <i class="bi bi-telephone" style="font-size: 4rem;color: brown;"></i>
+</body>
+<script>
+   
+ userlist = [
+    {
+        "name": "demo user",
+        "email": "demo@p.com",
+        "password": "123456"
+
+    },
+    {
+        "name": "demo user2",
+        "email": "user2@p.com",
+        "password": "12121215454"
+    },
+    {
+        "name": "demo user3",
+        "email": "user3@p.com",
+        "password": "545445"
+    }
+]
+
+searchtext = prompt("enter email id for search :")
+for(i=0;i<userlist.length;i++){
+    if(userlist[i].email == searchtext){
+    console.log(userlist[i].name)
+    }else{
+        console.log("user does not exist")
+    }
+}
+
+//  user = {}
+//  user.name = prompt("enter your name :")
+//  user.email = prompt("enter your email :")
+//  user.password = prompt("enter your password :")
+
+//  userlist.push(user)
+
+ console.log(userlist)
+
+ console.log(document.head)
+  
+</script>
+</html>
