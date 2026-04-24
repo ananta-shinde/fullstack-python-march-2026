@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <form class="bg-success p-5 text-white w-100">
+        <h4 class="text-center">User Registration</h4>
+       <div>
+            <label>Full Name :</label>
+            <input id="name" class="form-control" type="text" required/>
+       </div>
+       <div>
+            <label>Email :</label>
+            <input class="form-control" type="email" />
+       </div>
+       <div>
+            <label>contact :</label>
+            <input class="form-control" type="contact" />
+        </div>
+        <div>
+            <label>Select your gender :</label>
+            <input type="radio" name="gender" /><label>male</label>
+            <input type="radio" name="gender" /><label>female</label>
+        </div>
+
+        <div>
+            <label>Address :</label>
+            <textarea class="form-control" cols="" rows="5"></textarea>
+        </div>
+        <div>
+            <label>Country :</label>
+            <select class="form-control">
+                <option value="">India</option>
+                <option value="">USA</option>
+                <option value="">Germany</option>
+            </select>
+        </div>
+        <div>
+            <label>State :</label>
+            <select class="form-control">
+                <option value="">MH</option>
+                <option value="">UK</option>
+                <option value="">AP</option>
+            </select>
+        </div>
+        <div>
+            <label>city :</label>
+            <select class="form-control">
+                <option value="">pune</option>
+                <option value="">Shimla</option>
+                <option value="">Hydrabad</option>
+            </select>
+        </div>
+        <div>
+            <label>picode :</label>
+            <input class="form-control" type="number" name="" id="">
+        </div>
+       <input type="button" onclick="showData()" class="btn btn-dark w-100 mt-3">
+    </form>
+</body>
+<script>
+    var user = {}
+    
+   
+    function showData(){
+        user.name = document.getElementById("name").value
+        console.log(user)
+    }
+    </script>
+</html>
