@@ -1,15 +1,28 @@
-import recipies from "./data/recipies.json"
-import RecipieCard from "./Recipiecard"
-function DemoComponent(props){
+import tasklist from "./data/tasks.json"
 
-    
+function TaskRow(props){
+  return(
+    <tr>
+              <td>{props.data.title}</td>
+              <td>{props.data.status}</td>
+            </tr>
+  )
+}
+
+
+function DemoComponent(props){ 
     return (
         <>
-        <div className="container ">
-          {
-            recipies.map(value=>(<RecipieCard data={value} color="red"/>))
-          }
-        </div>
+          <table className="table">
+            <tr>
+              <th>Description</th>
+              <th>Status</th>
+            </tr>
+            {
+              tasklist.map(task=>(<TaskRow data={task}/>  ))
+            }
+          </table>
+           
         </>
     )
 }
