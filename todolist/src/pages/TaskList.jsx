@@ -1,43 +1,52 @@
-import { useEffect, useState } from "react";
-import { useParams, useSearchParams } from "react-router-dom";
-import AddNewTask from "./AddNewTask";
+import { useRef, useState } from "react";
+
 
 function TaskList(){
-    const [task,settask] = useSearchParams();
-    const [tasklist,setTaskList] = useState([])
+   
+   // const [formdata,setFormData] = useState({})
 
-    return(
-        <>
-         <div className="container">
-            <div className="row">
-                
-                <div className="offset-3 col-6 py-5">
-                    <h4 className="text-muted mb-3">My Task List :</h4>
-                    <table className="table border">
-                        <tr className="bg-dark text-white">
-                            <th className="p-4">Description</th>
-                            <th>Status</th>
-                            <th>Actions</th>
-                        </tr>
-                        {
-                            tasklist.map(task=>(
-                                <tr className="">
-                            <td className="p-4">{task.description}</td>
-                            <td>{task.status}</td>
-                            <td>
-                                <button className="btn btn-info btn-sm me-2">Edit</button>
-                                <button className="btn btn-danger btn-sm">Delete</button>
-                            </td>
-                        </tr>
-                            ))
-                        }
-                    </table>
-                </div>
-            </div>
-            <AddNewTask tasklist = {tasklist} updatetask={setTaskList}/>
+   // const handleChange = (event)=>{
+   //      if(event.target.name == "name")
+   //       setFormData({...formdata,name:event.target.value})
+   //      if(event.target.name == "email")
+   //         setFormData({...formdata,email:event.target.value})
+   //      if(event.target.name == "city")
+   //         setFormData({...formdata,city:event.target.value})
+   //      if(event.target.name == "contact")
+   //         setFormData({...formdata,contact:event.target.value})
+        
+   // }
+
+   const handleSubmit = (event)=>{
+      event.preventDefault();
+      const formdata = Object.fromEntries(new FormData(event.target));
+      console.log(formdata)
+   }
+
+   return(<>
+       <div className="row p-4">
+         <div className="col-6 offset-3">
+            <h4></h4>
+            <p></p>
          </div>
-        </>
-    )
+       </div>
+       <div className="row p-4">
+         <div className="col-6 offset-3">
+           <form onSubmit={handleSubmit}>
+               <h4>User registration</h4>
+               <div className="bg-dark p-4">
+                     <input className="form-control my-2" placeholder="enter your name" name="name" />
+                     <input className="form-control my-2" placeholder="enter your email" name="email"  />
+                     <input className="form-control my-2" placeholder="enter your city" name="city" />
+                     <input className="form-control my-2" placeholder="enter your contact" name="contact" />
+                     <button className="btn btn-success" >Submit</button>
+               </div>
+            </form> 
+         </div>
+       </div>
+       
+   </>)
+
 }
 
 export default TaskList;
