@@ -1,38 +1,48 @@
-import { Children } from "react";
-import AdminDashBoard from "./pages/admin/AdminDashBoard";
 import HomePage from "./pages/HomePage";
-import SignIn from "./pages/SignIn";
-import SignUp from "./pages/SignUp";
-import CustomerList from "./components/CustomerList";
-import SellerList from "./components/SellerList";
 
-const arrayofpaths = [
-  {
-    path:"/",
-    element:<HomePage/>
-  },
-  {
-    path:"/signup",
-    element:<SignUp/>
-  },
-  {
-    path:"/signin",
-    element:<SignIn/>
-  },
-   {
-    path:"/admin/dashboard/",
-    element:<AdminDashBoard/>,
-    children:[
-      {
-         path:"customers",
-         element:<CustomerList/>
-      },
-       {
-         path:"sellers",
-         element:<SellerList/>
-      }
-    ]
-  }
+
+export const routes = [
+    {
+        path:"/",
+       
+        children:[
+           {
+             path:"",
+             element:<HomePage/>
+           },
+           {
+             path:"categories/:categoryId/list",
+             element:"<CategoryListingPage/>"
+           },
+           {
+             path:"/product/:productId",
+             element:"<ProductDetailPage/>"
+           },
+           {
+             path:"product/:productId/checkout",
+             element:"<CheckoutPage/>"
+           },
+        ]
+    },
+    {
+        path:"/account/:userId/",
+        element:"<UserDashboard/>",
+        children:[
+            {
+                 path:"orders",
+                 element:"<Orders/>"
+            },
+             {
+                 path:"profile",
+                 element:"<UserProfile/>"
+            },
+            
+        ]
+    },
+    {
+        path:"/cart/:userId"
+    }
+
+
 ]
 
-export default arrayofpaths;

@@ -1,14 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router';
-import arrayofpaths from './routes';
+import { routes } from './routes';
 
-
-const routerConfig = createBrowserRouter(arrayofpaths)
+const approutes = createBrowserRouter(routes)
 
 function App() {
   return (
-    <RouterProvider router={routerConfig}/>
+    <RouterProvider router={approutes}/>
   );
 }
 
