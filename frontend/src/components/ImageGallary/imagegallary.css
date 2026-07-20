@@ -1,0 +1,11 @@
+.image-gallary-container .thumbnail{
+    width: 150px;
+    height: 150px;
+    border: 1px solid;
+}
+
+.image-gallary-container .preview-image{
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+}
