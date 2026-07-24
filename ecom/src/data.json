@@ -1,0 +1,65 @@
+
+{
+    "products":[
+        {
+            "title": "Apple Iphone 15",
+            "highlights":[
+                "256GB RAM",
+                "7 inches display",
+                "7000Mah battery",
+                "48MP + 16MP camera modules"
+            ],
+            "price": 58900,
+            "rating":4.5,
+            "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/d/9/-original-imagtc2qzgnnuhxh.jpeg?q=70"
+        },
+        {
+            "title": "Apple Iphone 15",
+            "highlights":[
+                "256GB RAM",
+                "7 inches display",
+                "7000Mah battery",
+                "48MP + 16MP camera modules"
+            ],
+            "price": 58900,
+            "rating":4.5,
+            "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/d/9/-original-imagtc2qzgnnuhxh.jpeg?q=70"
+        },
+        {
+            "title": "Apple Iphone 15",
+            "highlights":[
+                "256GB RAM",
+                "7 inches display",
+                "7000Mah battery",
+                "48MP + 16MP camera modules"
+            ],
+            "price": 58900,
+            "rating":4.5,
+            "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/d/9/-original-imagtc2qzgnnuhxh.jpeg?q=70"
+        },
+        {
+            "title": "Apple Iphone 15",
+            "highlights":[
+                "256GB RAM",
+                "7 inches display",
+                "7000Mah battery",
+                "48MP + 16MP camera modules"
+            ],
+            "price": 58900,
+            "rating":4.5,
+            "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/d/9/-original-imagtc2qzgnnuhxh.jpeg?q=70"
+        },
+        {
+            "title": "Apple Iphone 15",
+            "highlights":[
+                "256GB RAM",
+                "7 inches display",
+                "7000Mah battery",
+                "48MP + 16MP camera modules"
+            ],
+            "price": 58900,
+            "rating":4.5,
+            "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/d/9/-original-imagtc2qzgnnuhxh.jpeg?q=70"
+        }
+    ]
+}
