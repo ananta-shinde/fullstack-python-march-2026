@@ -1,0 +1,13 @@
+
+
+.search-control{
+   position: relative;
+}
+
+.search-control .search-result-container{
+    position: absolute;
+    /* border: 1px solid black; */
+    top:45px;
+    width: 100%;
+    left:0;
+}

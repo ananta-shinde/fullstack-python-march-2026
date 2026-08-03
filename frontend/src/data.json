@@ -1,0 +1,241 @@
+{
+    "categories":[
+        {
+            "id":1,
+            "name":"Appliances",
+            "thumbnail":"category-icon"
+        },
+         {
+            "id":2,
+            "name":"Mobiles & Tabs",
+            "thumbnail":"category-icon"
+    
+        },
+        {
+            "id":3,
+            "name":"Laptops & accssaries",
+            "thumbnail":"category-icon"
+          
+        }
+    ],
+
+
+    "subCategories":[
+        {
+            "id":1,
+            "name":"Mobiles",
+            "thumbnail":"category-icon",
+            "categoryId" : 2,
+            "availableFilters":["ram","screenSize","rom","price","rating","brands"]
+        },
+         {
+            "id":2,
+            "name":"Tabs",
+            "categoryId" : 1,
+            "thumbnail":"category-icon",
+            "availableFilters":["ram","screenSize","rom","price","rating","brands"]
+        },
+        {
+            "id":3,
+            "name":"Laptops",
+            "categoryId" : 3,
+            "thumbnail":"category-icon",
+            "availableFilters":["ram","screenSize","rom","price","rating","brands"]
+        }
+       
+    ],
+
+    "brands":[
+        {
+            "id":1,
+            "logo":"",
+            "name":"Realme"
+        }
+    ],
+
+    "products":[
+        {
+            "id":1,
+            "name":"realme NARZO 100x 5G (Flash Orange,6GB+128GB)",
+            "categoryId":1,
+            "price":35499,
+            "discountPercentage":40,
+            "rating":4.2,
+            "brandId" :1,
+            "thumbnail":"https://m.media-amazon.com/images/I/81qsFiej8IL._AC_UY218_.jpg",
+            "images":[
+                "https://m.media-amazon.com/images/I/81qsFiej8IL._AC_UY218_.jpg",
+                "https://m.media-amazon.com/images/I/51p2s6Caj6L._SX38_SY50_CR,0,0,38,50_.jpg",
+                "https://m.media-amazon.com/images/I/51d17utJpEL._SX38_SY50_CR,0,0,38,50_.jpg"
+            ],
+           
+            "highlights":[
+                "Biggest 8000mAh Battery – Get 3-day freedom on a single charge for entertainment, study, travel, and all-day usage.",
+                "Fastest 45W Charging – Charge for just 1 hour and enjoy a full day of usage or up to 12 hours of gaming.",
+                "Best Gaming Performance – 144Hz 1200nits high-brightness straight display, 5300mm² VC cooling, and full-scenario bypass charging for cool and stable 12-hour BGMI gaming",
+                "Advanced Battery Safety Protection – Passed 30+ rigorous safety tests with stable operation from -20°C to 56°C and protection against drops, pressure, and overcharging."
+            ],
+            "specifications":{
+                "additionalDetails": {
+                        "Operating System":"Android 16",
+                        "RAM Memory Installed":	"6 GB",
+                        "Processor Speed":	"2.4 GHz",
+                        "Memory Storage Capacity":	"128 GB",
+                        "Colour":	"Flash Orange"
+                    },
+                 "camera":{
+                        "Front Photo Sensor Resolution":	"8 MP",
+                        "Rear Facing Camera Photo Sensor Resolution":	"50 MP",
+                        "Number of Rear Facing Cameras":	1
+                    } ,
+                "display":{
+                    "Screen Size Unit of Measure":	"17.3 Centimetres",
+                    "Resolution":	"1570 x 720",
+                    "Refresh Rate":	144,
+                    "Display Type":	"LCD",
+                    "Maximum Display Resolution":	"1570 x 720 Pixels",
+                    "Display Pixel Density":	"254 Pixels Per Inch (PPI)"
+                }  
+            }
+            
+
+        },
+        {
+            "id":2,
+            "name":"realme NARZO 90x 5G (Maroon Red 2026, 6GB+128GB) | 7000mAh + 60W Biggest Battery ",
+            "categoryId":1,
+            "price":33999,
+            "discountPercentage":20,
+            "rating":4.0,
+            "brandId" :1,
+            "thumbnail":"https://m.media-amazon.com/images/I/81u0omBK6VL._AC_UY218_.jpg",
+            "images":[
+                "https://m.media-amazon.com/images/I/51B0WFL1DYL._SX38_SY50_CR,0,0,38,50_.jpg",
+                "https://m.media-amazon.com/images/I/51FTFyQg+BL._SX38_SY50_CR,0,0,38,50_.jpg",
+                "https://m.media-amazon.com/images/I/414zqII1XML._SX38_SY50_CR,0,0,38,50_.jpg"
+            ],
+           
+            "highlights":[
+                "Biggest 8000mAh Battery – Get 3-day freedom on a single charge for entertainment, study, travel, and all-day usage.",
+                "Fastest 45W Charging – Charge for just 1 hour and enjoy a full day of usage or up to 12 hours of gaming.",
+                "Best Gaming Performance – 144Hz 1200nits high-brightness straight display, 5300mm² VC cooling, and full-scenario bypass charging for cool and stable 12-hour BGMI gaming",
+                "Advanced Battery Safety Protection – Passed 30+ rigorous safety tests with stable operation from -20°C to 56°C and protection against drops, pressure, and overcharging."
+            ],
+            "specifications":{
+                "additionalDetails": {
+                        "Operating System":"Android 16",
+                        "RAM Memory Installed":	"6 GB",
+                        "Processor Speed":	"2.4 GHz",
+                        "Memory Storage Capacity":	"128 GB",
+                        "Colour":	"Flash Orange"
+                    },
+                 "camera":{
+                        "Front Photo Sensor Resolution":	"8 MP",
+                        "Rear Facing Camera Photo Sensor Resolution":	"50 MP",
+                        "Number of Rear Facing Cameras":	1
+                    } ,
+                "display":{
+                    "Screen Size Unit of Measure":	"17.3 Centimetres",
+                    "Resolution":	"1570 x 720",
+                    "Refresh Rate":	144,
+                    "Display Type":	"LCD",
+                    "Maximum Display Resolution":	"1570 x 720 Pixels",
+                    "Display Pixel Density":	"254 Pixels Per Inch (PPI)"
+                }  
+            }
+
+
+        },
+        {
+            "id":3,
+            "name":"realme NARZO 80 Lite 4G (Obsidian Black 2026, 4GB+64GB) | 6300mAh Segment's Biggest Battery",
+            "categoryId":1,
+            "price":19999,
+            "discountPercentage":10,
+            "rating":3.5,
+            "brandId" :1,
+            "thumbnail":"https://m.media-amazon.com/images/I/81oxfhHd5XL._AC_UY218_.jpg",
+            "images":[
+                "https://m.media-amazon.com/images/I/41lq7JQL15L._SX38_SY50_CR,0,0,38,50_.jpg",
+                "https://m.media-amazon.com/images/I/51MW7-wcG2L._SX38_SY50_CR,0,0,38,50_.jpg",
+                "https://m.media-amazon.com/images/I/417i+GxZQ3L._SX38_SY50_CR,0,0,38,50_.jpg"
+            ],
+           
+            "highlights":[
+                "Biggest 8000mAh Battery – Get 3-day freedom on a single charge for entertainment, study, travel, and all-day usage.",
+                "Fastest 45W Charging – Charge for just 1 hour and enjoy a full day of usage or up to 12 hours of gaming.",
+                "Best Gaming Performance – 144Hz 1200nits high-brightness straight display, 5300mm² VC cooling, and full-scenario bypass charging for cool and stable 12-hour BGMI gaming",
+                "Advanced Battery Safety Protection – Passed 30+ rigorous safety tests with stable operation from -20°C to 56°C and protection against drops, pressure, and overcharging."
+            ],
+            "specifications":{
+                "additionalDetails": {
+                        "Operating System":"Android 16",
+                        "RAM Memory Installed":	"6 GB",
+                        "Processor Speed":	"2.4 GHz",
+                        "Memory Storage Capacity":	"128 GB",
+                        "Colour":	"Flash Orange"
+                    },
+                 "camera":{
+                        "Front Photo Sensor Resolution":	"8 MP",
+                        "Rear Facing Camera Photo Sensor Resolution":	"50 MP",
+                        "Number of Rear Facing Cameras":	1
+                    } ,
+                "display":{
+                    "Screen Size Unit of Measure":	"17.3 Centimetres",
+                    "Resolution":	"1570 x 720",
+                    "Refresh Rate":	144,
+                    "Display Type":	"LCD",
+                    "Maximum Display Resolution":	"1570 x 720 Pixels",
+                    "Display Pixel Density":	"254 Pixels Per Inch (PPI)"
+                }  
+            }
+        },
+        {
+            "id":4,
+            "name":"realme 16 Pro 5G Smartphone 8GB+256GB Gold | 7000mAh Battery, 80W SuperVOOC, 6.78-Inch Screen",
+            "categoryId":1,
+            "price":19999,
+            "discountPercentage":10,
+            "rating":3.5,
+            "brandId" :1,
+            "thumbnail":"https://m.media-amazon.com/images/I/717ybYoXm0L._AC_UY218_.jpg",
+            "images":[
+                "https://m.media-amazon.com/images/I/41RUplrY0UL._SX38_SY50_CR,0,0,38,50_.jpg",
+                "https://m.media-amazon.com/images/I/51QqSnmA5BL._SX38_SY50_CR,0,0,38,50_.jpg",
+                "https://m.media-amazon.com/images/I/51Vq0ykS4FL._SX38_SY50_CR,0,0,38,50_.jpg"
+            ],
+           
+            "highlights":[
+                "Biggest 8000mAh Battery – Get 3-day freedom on a single charge for entertainment, study, travel, and all-day usage.",
+                "Fastest 45W Charging – Charge for just 1 hour and enjoy a full day of usage or up to 12 hours of gaming.",
+                "Best Gaming Performance – 144Hz 1200nits high-brightness straight display, 5300mm² VC cooling, and full-scenario bypass charging for cool and stable 12-hour BGMI gaming",
+                "Advanced Battery Safety Protection – Passed 30+ rigorous safety tests with stable operation from -20°C to 56°C and protection against drops, pressure, and overcharging."
+            ],
+            "specifications":{
+                "additionalDetails": {
+                        "Operating System":"Android 16",
+                        "RAM Memory Installed":	"6 GB",
+                        "Processor Speed":	"2.4 GHz",
+                        "Memory Storage Capacity":	"128 GB",
+                        "Colour":	"Flash Orange"
+                    },
+                 "camera":{
+                        "Front Photo Sensor Resolution":	"8 MP",
+                        "Rear Facing Camera Photo Sensor Resolution":	"50 MP",
+                        "Number of Rear Facing Cameras":	1
+                    } ,
+                "display":{
+                    "Screen Size Unit of Measure":	"17.3 Centimetres",
+                    "Resolution":	"1570 x 720",
+                    "Refresh Rate":	144,
+                    "Display Type":	"LCD",
+                    "Maximum Display Resolution":	"1570 x 720 Pixels",
+                    "Display Pixel Density":	"254 Pixels Per Inch (PPI)"
+                }  
+            }
+        }
+       
+    ]
+
+
+}

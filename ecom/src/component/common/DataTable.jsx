@@ -7,11 +7,18 @@ const DataTable = (props) => {
    const [data,setData] = useState(props.data);
 //    const [pagesize,setPageSize] = useState(defaultPageSize);
 
+   const handlePageChange = (event)=>{
+             var pageno = event.target.innerText;
+            console.log(event.target.innerText)
+            setData(props.data.slice((parseInt(pageno)-1)*props.pageSize,props.pageSize*parseInt(pageno)))
+   }
+
    useEffect(()=>{
+       setData(props.data.slice(0,props.pageSize))
        var noofpages = Math.ceil(data.length/defaultPageSize);
        var uistructure = [];
        for(var i=1;i<=noofpages;i++){
-            uistructure.push(<li class="page-item"><a class="page-link" href="#">{i}</a></li>)
+            uistructure.push(<li class="page-item"><span class="page-link" onClick={handlePageChange} href="#">{i}</span></li>)
         }
         setpageUI(uistructure)
    },[])
@@ -48,7 +55,7 @@ const DataTable = (props) => {
             </tbody>
         </table>
        {
-          data.length > defaultPageSize && 
+          props.data.length > defaultPageSize && 
             <ul class="pagination justify-content-end">
     <li class="page-item"><a class="page-link" href="#">Previous</a></li>
      {pageUI}

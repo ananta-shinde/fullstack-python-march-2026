@@ -1,21 +1,39 @@
-import ImageCarousel from "../components/ImageCarouselLarge/imageCarousel";
-import ImmageGallary from "../components/ImageGallary/ImageGallary";
-import Navbar from "../components/Navbar/Navbar";
-import ProductSection from "../components/ProductSection/ProductSection";
-import ProductSlider from "../components/ProductSlider/ProductSlider";
-import SearchComponent from "../components/SearchComponent/SearchComponent";
+import AppCategoryBar from "../common/AppCategoryBar";
+import AppNavBar from "../common/AppNavBar";
+import HorizontalScrollContiner from "../common/HorizontalScrollContainer";
+import MainBannerSlider from "../common/MainBannerSlider";
+import ProductCaraousel from "../common/ProductCarousel";
+import UserDashboard from "../common/UserDashboard";
+import { getProducts } from "../helper";
+import ProductDetailsPage from "./ProductDetailsPage";
+import ShopingCartPage from "./ShopingCartPage";
 
 const HomePage = () => {
-    return ( 
+    return (
         <>
-          <Navbar/>
-          <ImageCarousel/>
-         <ProductSection/>
-         <ImmageGallary/>
-        
-        </> 
-        
-    );
+          {/* ------------------ header component ------------------------- */}
+            <AppNavBar/>
+
+            <div className="content-panel" style={{padding:"1% 10%"}}>
+                      {/* ---------------------- category bar ------------------------------- */}
+                <AppCategoryBar/>
+
+                {/* ---------------------------- main banner slider ----------------------------- */}
+                <MainBannerSlider/>
+
+                <ProductCaraousel products={getProducts()} title={"Best from Realme"}/>
+                <ProductCaraousel products={getProducts()} title={"Best from Realme"}/>
+                <ProductCaraousel products={getProducts()} title={"Best from Realme"}/>
+
+                <ProductDetailsPage/>
+
+                <UserDashboard/>
+                <ShopingCartPage/>
+            </div>
+            
+
+        </>
+      );
 }
  
 export default HomePage;

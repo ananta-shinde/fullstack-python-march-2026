@@ -53,6 +53,41 @@ function App() {
             price:145000,
             category:"mobile",
             rating:4.5
+        },
+        {
+            name:"p4",
+            brand:"Apple",
+            price:145000,
+            category:"mobile",
+            rating:4.5
+        },
+        {
+            name:"p4",
+            brand:"Apple",
+            price:145000,
+            category:"mobile",
+            rating:4.5
+        },
+        {
+            name:"p4",
+            brand:"Apple",
+            price:145000,
+            category:"mobile",
+            rating:4.5
+        },
+        {
+            name:"p4",
+            brand:"Apple",
+            price:145000,
+            category:"mobile",
+            rating:4.5
+        },
+        {
+            name:"p4",
+            brand:"Apple",
+            price:145000,
+            category:"mobile",
+            rating:4.5
         }
     ]
 
