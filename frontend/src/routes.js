@@ -1,10 +1,13 @@
 import HomePage from "./pages/HomePage";
+import ProductDetailsPage from "./pages/ProductDetailsPage";
+import ProductListingPage from "./pages/ProductListingPage";
+import HomeTemplate from "./templates/homeTemplate";
 
 
 export const routes = [
     {
         path:"/",
-       
+        element:<HomeTemplate/>,
         children:[
            {
              path:"",
@@ -12,11 +15,11 @@ export const routes = [
            },
            {
              path:"categories/:categoryId/list",
-             element:"<CategoryListingPage/>"
+             element:<ProductListingPage/>
            },
            {
              path:"/product/:productId",
-             element:"<ProductDetailPage/>"
+             element:<ProductDetailsPage/>
            },
            {
              path:"product/:productId/checkout",

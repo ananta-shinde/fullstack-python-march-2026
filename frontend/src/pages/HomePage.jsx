@@ -6,15 +6,15 @@ import ProductCaraousel from "../common/ProductCarousel";
 import UserDashboard from "../common/UserDashboard";
 import { getProducts } from "../helper";
 import ProductDetailsPage from "./ProductDetailsPage";
+import ProductListingPage from "./ProductListingPage";
 import ShopingCartPage from "./ShopingCartPage";
 
 const HomePage = () => {
     return (
         <>
-          {/* ------------------ header component ------------------------- */}
-            <AppNavBar/>
+          
 
-            <div className="content-panel" style={{padding:"1% 10%"}}>
+            
                       {/* ---------------------- category bar ------------------------------- */}
                 <AppCategoryBar/>
 
@@ -29,7 +29,8 @@ const HomePage = () => {
 
                 <UserDashboard/>
                 <ShopingCartPage/>
-            </div>
+                <ProductListingPage/>
+            
             
 
         </>

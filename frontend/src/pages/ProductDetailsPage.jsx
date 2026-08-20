@@ -44,7 +44,7 @@ const ProductDetailsPage = () => {
             </div>
 
              {/* ---------------------------------  second row --------------------------------------- */}
-             <div className="row">
+             <div className="row p-4 my-5">
                 <ul class="nav nav-tabs">
                         <li class="nav-item">
                             <a class={"nav-link "+ (activeTab == "specifications"?"active text-warning":"text-dark")} aria-current="page" data-bs-toggle="tab" data-bs-target="#specifications" onClick={()=>{setctiveTab("specifications")}} >Specifications</a>
